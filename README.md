@@ -1,1 +1,3 @@
 # JavaPatterns
+
+Adapter by composition 
