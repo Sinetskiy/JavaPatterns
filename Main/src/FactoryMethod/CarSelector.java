@@ -4,22 +4,18 @@ package FactoryMethod;
 public class CarSelector {
 
     // фабричный метод
-    public Car getCar(RoadType roadType) {
+    public Car getCar(RoadType roadType) throws Exception {
 
-        Car car = null;
         switch (roadType) {
             case CITY:
-                car = new Porche();
-                break;
+                return new Porche();
             case OFF_ROAD:
-                car = new Jeep();
-                break;
+                return new Jeep();
             case GAZON:
-                car = new NewJeep();
-                break;
+                return new NewJeep();
+            default:
+                throw new Exception("roadType not found ...");
         }
-
-        return car;
 
     }
 }
