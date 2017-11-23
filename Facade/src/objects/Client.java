@@ -18,6 +18,8 @@ public class Client {
         Wheel wheel =  new Wheel();
         wheel.turn();
 
+        System.out.println("\n==================\n");
+
         // вызов с фасадом
         CarFacade carFacade = new CarFacade();
         carFacade.go();
